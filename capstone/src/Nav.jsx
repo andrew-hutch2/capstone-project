@@ -1,8 +1,9 @@
+import logo from "./images/small_logo.jpg";
+
 function Nav() {
     return (
-      <>
         <nav>
-            <img src="./public/image/small_logo.lpg"> </img>
+            <img src={logo} width="200" height="50" alt="logo" ></img>
             <ul>
                 <li> <a href="/home"> Home</a> </li>
                 <li> <a href="/about"> About</a> </li>
@@ -12,9 +13,6 @@ function Nav() {
                 <li> <a href="/login"> Login</a> </li>
             </ul>
         </nav>
-      </>
     );
   }
-  
   export default Nav;
-  
