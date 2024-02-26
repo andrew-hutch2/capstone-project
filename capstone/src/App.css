@@ -102,6 +102,7 @@ nav ul{
   text-decoration: none;
 }
 
+/*
 
 
 @media (max-width: 700px) {
@@ -118,3 +119,169 @@ nav ul{
     gap: 1em;
   }
 }
+*/
+
+@media (max-width: 700px) {
+  .grid-adjustable-columns {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+  .grid-adjustable-columns {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+}
+
+.container-calltoaction{
+  display: flex;
+  flex-direction: row;
+}
+
+.basicflex{
+  display: flex;
+  flex-direction: row;
+}
+
+.basicflexcolumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.littlelemonyellow{
+  color: yellow;
+}
+.calltoaction{
+  justify-content: center;
+  background-color: lightgrey;
+  padding: 4rem;
+}
+.calltoaction-img{
+  position: relative;
+  top: 100px;
+}
+.calltoaction-text{
+  text-align: center;
+  max-width: 700px;
+  max-height: 500px;
+  margin: 50px;
+  text-align: left;
+}
+img{
+  border-radius: 10%;
+}
+
+h1{
+  font-size: 40px;
+  padding:0;
+  margin:0;
+}
+
+button{
+  height: 20px;
+  width: 120px;
+  
+}
+
+.onlinemenu{
+  text-align: right;
+  margin: 2rem;
+  padding-right:2rem;
+}
+
+.onlinemenu-button{
+  width: 150px;
+  height: 40px;
+  border-radius: 20%;
+  border:none;
+  background-color: yellow;
+  
+}
+
+.specials{
+  margin: 5rem;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.specials-item{
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  padding: 2rem;
+  margin:auto;
+  background-color: lightgrey;
+  
+}
+
+.customerreview{
+  background-color: lightgrey;
+  justify-content: center;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.testimonials{
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+
+}
+
+.chicago{
+  margin:5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.chicago-text{
+  max-width:40%;
+  margin:2rem;
+}
+
+
+
+
+@media (max-width: 700px) {
+  .chicago-img1 {
+    position: relative;
+    left:20px;
+    top:200px;
+    z-index:1;
+    max-width: 200px;
+  }
+  .chicago-img2 {
+    position: relative;
+    left:-20px;
+    top:00px;
+    z-index:0;
+    max-width: 200px;
+  }
+  .chicago-text{
+    max-width:90%;
+    margin:2rem;
+  }
+  
+}
+
+@media (min-width: 701px) {
+  .chicago-img1 {
+    position: relative;
+    left:30px;
+    top: 100px;
+    z-index:1;
+    max-width: 200px;
+  }
+  .chicago-img2{
+    max-width:200px;
+  }
+}
+
+
