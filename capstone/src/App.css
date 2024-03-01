@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -160,6 +161,10 @@ nav ul{
   background-color: lightgrey;
   padding: 4rem;
 }
+ button:hover{
+  background-color:white;
+}
+
 .calltoaction-img{
   position: relative;
   top: 100px;
@@ -176,16 +181,39 @@ img{
 }
 
 h1{
-  font-size: 40px;
-  padding:0;
-  margin:0;
+  font-size: 4rem;
+ 
 }
-
-button{
-  height: 20px;
-  width: 120px;
+h2{
+  font-size: 3rem;
   
 }
+h3{
+  font-size: 2rem;
+  
+}
+h4{
+  font-size: 1.5rem;
+  
+}
+
+
+button{
+  margin: 1rem;
+  width: 150px;
+  height: 40px;
+  border-radius: 20%;
+  border:none;
+  background-color: yellow;
+}
+.calltoaction-button{
+  border-radius: 20%;
+}
+
+.special-button{
+  background-color: yellow;
+}
+
 
 .onlinemenu{
   text-align: right;
@@ -201,7 +229,13 @@ button{
   background-color: yellow;
   
 }
-
+.onlinemenu-button:hover{
+  background-color: lightgrey;
+  
+}
+.specials-img{
+  width: 110%;
+}
 .specials{
   margin: 5rem;
   padding: 50px;
@@ -213,16 +247,39 @@ button{
   align-items: center;
   max-width: 350px;
   padding: 2rem;
+  border-radius: 10%;
   margin:auto;
+  margin-bottom: 2rem;
   background-color: lightgrey;
   
 }
 
 .customerreview{
-  background-color: lightgrey;
+  background-color: whitesmoke;
   justify-content: center;
+  align-items: center;
   margin: 2rem;
   padding: 1rem;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10%;
+  
+}
+.customer-name{
+  align-items: center;
+  margin: auto 0 auto 0;
+  font-weight: normal;
+  
+}
+.customerreview-img{
+  width:70%;
+  padding:.5rem;
+}
+.img-name{
+  justify-content: center;
+}
+.customerreview-group{
+  justify-content: center;
 }
 
 .testimonials{
@@ -268,7 +325,6 @@ button{
     max-width:90%;
     margin:2rem;
   }
-  
 }
 
 @media (min-width: 701px) {

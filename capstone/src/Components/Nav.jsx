@@ -8,7 +8,7 @@ function Nav() {
         <nav >
             <ul className="grid-adjustable-columns">
                 <li> <img src={logo} width="200" height="50" alt="logo" ></img></li>
-                <li> <Link to="/"> HomePage</Link> </li>
+                <li> <Link to="/"> Homepage</Link> </li>
                 <li> <Link to="/"> About</Link> </li>
                 <li> <Link to="/"> Menu</Link> </li>
                 <li> <Link to="/booking"> Reservations</Link> </li>

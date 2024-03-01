@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import './Booking.css';
+import BookingForm from './BookingForm.jsx';
 
-function BookingPage() {
-  return (
-    <div>BookingPage</div>
-  )
+
+function BookingPage(props) {
+ 
+    return (
+      <div>
+        <BookingForm change={props.change} availableTimes={props.availableTimes} />
+      </div>
+    );
 }
+
 
 export default BookingPage
