@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-
+import { useNavigate } from 'react-router-dom'
 function BookingFrom(props) {
+  const navigate = useNavigate();
   const [date, setDate] = useState("")
   const [time, setTime] = useState("")
   const [numGuest, setNumGuest] = useState("")
@@ -9,7 +10,9 @@ function BookingFrom(props) {
     e.preventDefault()
     const value = {date: date, time: time}
     props.change(value)
-    
+    if (props.submitForm({"date": date, "time": time, "numGuest": numGuest, "occasion": occasion}) === true){
+      navigate("/bookingConfirmation")
+    }
   }
 
   function dateChange(e){
@@ -22,7 +25,7 @@ function BookingFrom(props) {
   }
   return (
     <div className='form-container'>
-    <h1> Make Reservation</h1>
+    <h1>Make Reservation</h1>
     <form className='form' onSubmit={handleSubmit}>
       
       <div className='field'> 
@@ -33,7 +36,8 @@ function BookingFrom(props) {
       <div className='field'>
         <label htmlFor="res-time">Choose time</label>
         <select id="res-time "  value={time} onChange={(e) => setTime(e.target.value)} >
-            {props.availableTimes.map(prevval => <option> {prevval}</option>)}
+            {props.availableTimes && props.availableTimes.map(prevval => <option> {prevval}</option> ) }
+  
         </select>
       </div>
       <div className='field'>

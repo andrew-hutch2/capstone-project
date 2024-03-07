@@ -7,7 +7,7 @@ function BookingPage(props) {
  
     return (
       <div>
-        <BookingForm change={props.change} availableTimes={props.availableTimes} />
+        <BookingForm change={props.change} availableTimes={props.availableTimes} submitForm={props.submitForm}/>
       </div>
     );
 }

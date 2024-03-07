@@ -36,3 +36,12 @@
     width:150px;
     height: 20px;
   }
+
+
+  .center_confirmation{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
