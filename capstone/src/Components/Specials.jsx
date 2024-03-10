@@ -8,7 +8,7 @@ function Specials() {
   return (
     <div className='specials'>
       <div className='onlinemenu'>
-        <button className='onlinemenu-button'>Online Menu</button>
+        <button aria-label="Online Menu" className='onlinemenu-button'>Online Menu</button>
       </div>
     <div className='grid-adjustable-columns '>
       <SpecialItem title="Title of Dish"

@@ -6,7 +6,7 @@ function SpecialItem(props) {
         <img className="specials-img" src={props.img} alt={`${props.title}` }/>
         <h3> {props.title} </h3>
         <p> {props.description} </p>
-        <button className='special-button'> Order a delivery </button>
+        <button aria-label="order a delivery" className='special-button'> Order a delivery </button>
     </section>
 
   )

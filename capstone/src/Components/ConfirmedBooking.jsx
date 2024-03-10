@@ -1,8 +1,16 @@
 import React from 'react'
-
+import {useNavigate}  from 'react-router-dom';
 function ConfirmedBooking() {
+  const navigate = useNavigate();
+  function handleNav(){
+    navigate("/")
+  }
   return (
-    <h1 className='center_confirmation'>Booking Confirmed</h1>
+    <div className='bookingconfirm'>
+    <h1>Booking Confirmed</h1>
+
+    <input type="submit" className='submit-button' onClick={handleNav} value="return to main menu" />
+    </div>
   )
 }
 

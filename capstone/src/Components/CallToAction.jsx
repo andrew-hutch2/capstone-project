@@ -8,7 +8,7 @@ function CallToAction() {
             <h2> Chicago</h2>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <a href="/booking"><button className="calltoaction-button"> Reserve a table</button></a>
+            <a href="/booking"><button aria-label="reserve a table" className="calltoaction-button"> Reserve a table</button></a>
         </section>
         <section>
             <img alt="sandwiches" width="400" src={sandwich} className='calltoaction-img'/>
